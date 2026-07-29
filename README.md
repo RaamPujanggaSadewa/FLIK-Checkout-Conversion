@@ -17,6 +17,10 @@
 
 ---
 
+![Original checkout flow with heuristic evaluation findings](./phase1-original-checkout-heuristics.avif)
+
+---
+
 ## Problem Statement
 
 FLIK's checkout user journey contained unnecessary friction points that were limiting conversion rates. The challenge was to **streamline the flow, reduce friction, and improve the checkout page to boost conversion**.
@@ -32,6 +36,8 @@ Observation-based analysis using Google Chrome on Android devices to manually id
 - **Feedback loops:** 4 rounds of iteration with CEO
 - **Outcome:** Identified key friction points for redesign
 
+![Phase 1: Before and after checkout UI comparison](./phase1-before-after-comparison.svg)
+
 ### Phase 2: Unmoderated Usability Testing
 Large-scale remote testing to validate guest checkout preference and button placement.
 
@@ -43,6 +49,10 @@ Large-scale remote testing to validate guest checkout preference and button plac
 
 **Key Finding:** 68% of participants chose Guest Checkout, perceiving it as faster despite contradictory performance data.
 
+![Phase 2: CVR gap analysis - 5.15% difference between guest checkout and login](./phase2-cvr-gap-analysis.svg)
+
+![Phase 2: Maze usability testing research](./phase2-maze-research.avif)
+
 ### Phase 3: Guerrilla Usability Testing
 In-person testing to validate drop-off hypothesis and test simplified flow.
 
@@ -52,6 +62,8 @@ In-person testing to validate drop-off hypothesis and test simplified flow.
 - **Methodology:** In-person testing with context-setting ice-breakers
 
 **Key Finding:** Significant drop-off at login/guest checkout decision point due to session reset (48-hour timeout).
+
+![Phase 3: User flow showing drop-off at login/guest checkout decision point](./phase3-userflow-dropoff.svg)
 
 ### Phase 4: Iterative Refinement Testing
 Three additional usability testing rounds to fine-tune UI balance between guest checkout accessibility and login incentivization.
@@ -94,6 +106,8 @@ The explicit login/guest checkout decision point was a major drop-off trigger. R
 **Short-term:** Extended session persistence from 48 hours to 1 month, reasoning that FLIK's low market prominence made account compromise unlikely.
 
 **Long-term strategy:** Remove the intermediate login/guest checkout decision step, allowing direct checkout access for logged-in users.
+
+![Phase 3: Long-term solution - simplified checkout flow](./phase3-longterm-solution.svg)
 
 **Outcome:** Quantified drop-off issue; validated simplified approach through testing.
 
@@ -173,6 +187,10 @@ The explicit login/guest checkout decision point was a major drop-off trigger. R
 **User Satisfaction:** 9.1/10 checkout ease rating demonstrates strong product-market fit for redesigned flow.
 
 **Business Alignment:** Successfully balanced UX simplicity with business objectives of login incentivization and customer retention.
+
+---
+
+![Phase 4: Full UI transformation of FLIK checkout](./phase4-ui-transformation.svg)
 
 ---
 

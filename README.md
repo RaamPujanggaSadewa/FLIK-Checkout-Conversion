@@ -13,6 +13,7 @@
 | **Role** | Product Designer & Researcher |
 | **Duration** | 6 months |
 | **Industry** | Checkout & Merchant Enablement Platform |
+| **Live** | [Landing page](https://flik.co.id/en) · [Merchant Dashboard](https://merchant.flik.co.id/register/) |
 
 ---
 

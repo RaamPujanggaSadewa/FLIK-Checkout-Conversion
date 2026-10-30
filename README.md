@@ -2,9 +2,9 @@
 
 **Four phases of research and redesign on FLIK's checkout entry, from a heuristic audit to the one-step checkout that's live today.**
 
-[**Read the full case study →**](https://raam-portfolio-eta.vercel.app/work/flik-checkout) · [Watch the 80-second video](https://raam-portfolio-eta.vercel.app/work/flik-checkout#watch)
+[**Read the full case study →**](https://raamportfolio.vercel.app/work/flik-checkout) · [Watch the 80-second video](https://raamportfolio.vercel.app/work/flik-checkout#watch)
 
-[![The case study video](./video-poster.jpg)](https://raam-portfolio-eta.vercel.app/work/flik-checkout#watch)
+[![The case study video](./video-poster.jpg)](https://raamportfolio.vercel.app/work/flik-checkout#watch)
 
 ---
 
@@ -130,4 +130,4 @@ The CEO preferred a different look for the final screen, so I rebuilt it around 
 
 ---
 
-*Contact details in the screenshots are blurred.* · [Raam Pujangga Sadewa](https://raam-portfolio-eta.vercel.app) · Product Design Engineer
+*Contact details in the screenshots are blurred.* · [Raam Pujangga Sadewa](https://raamportfolio.vercel.app) · Product Design Engineer

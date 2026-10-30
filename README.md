@@ -1,6 +1,10 @@
-# FLIK Checkout Experience — Case Study
+# FLIK Checkout: Making One-Click Checkout Worth Logging In For
 
-**Evolving the checkout flow to reduce friction and improve conversion rates**
+**Four phases of research and redesign on FLIK's checkout entry, from a heuristic audit to the one-step checkout that's live today.**
+
+[**Read the full case study →**](https://raam-portfolio-eta.vercel.app/work/flik-checkout) · [Watch the 80-second video](https://raam-portfolio-eta.vercel.app/work/flik-checkout#watch)
+
+[![The case study video](./video-poster.jpg)](https://raam-portfolio-eta.vercel.app/work/flik-checkout#watch)
 
 ---
 
@@ -8,194 +12,122 @@
 
 | | |
 |---|---|
-| **Project** | Checkout Experience Redesign |
-| **Company** | FLIK |
-| **Role** | Product Designer & Researcher |
-| **Duration** | 6 months |
-| **Industry** | Checkout & Merchant Enablement Platform |
-| **Live** | [Landing page](https://flik.co.id/en) · [Merchant Dashboard](https://merchant.flik.co.id/register/) |
+| **Company** | FLIK, a one-click checkout and merchant platform (Indonesia) |
+| **Role** | Product Designer, leading the research. One of two designers, working with the CEO, two PMs and engineering |
+| **Timeline** | Aug 2023 – Jun 2025 |
+| **Platform** | Mobile and desktop web checkout, embedded on merchant sites |
+| **Methods** | Heuristic evaluation, funnel data, unmoderated testing (Maze), guerrilla testing |
+
+![The live FLIK checkout on desktop and mobile](./live-checkout.png)
 
 ---
 
-![Original checkout flow with heuristic evaluation findings](./phase1-original-checkout-heuristics.avif)
+## The trade-off behind every phase
+
+Brands add FLIK to their own websites as a one-click checkout. When a shopper clicks "checkout" on the merchant's site, they land on FLIK. If they're logged in, their address and payment are already filled in on every FLIK merchant, and they earn cashback.
+
+The easiest path for a shopper is guest checkout. The path that makes FLIK valuable is logging in. **Every phase of this project was about making checkout easier without making login feel optional.**
+
+| Phase | What happened |
+|---|---|
+| **1 · Audit and redesign** | No data yet, so I started with a heuristic review of the live checkout and shipped a cleaner page. |
+| **2 · A 5.15% gap** | Guest checkout beat login. Research showed shoppers wanted the rewards but chose guest because it felt faster. |
+| **3 · A drop-off at the login step** | A one-month session fix shipped right away, while a one-step flow was tested. |
+| **4 · Balancing the two paths** | Three more test rounds, then the version that's live today. |
 
 ---
 
-## Problem Statement
+## Phase 1 · Start with what you can see
 
-FLIK's checkout user journey contained unnecessary friction points that were limiting conversion rates. The challenge was to **streamline the flow, reduce friction, and improve the checkout page to boost conversion**.
+- **Trigger:** an open brief from the CEO to improve checkout. No target metric, no analytics.
+- **Method:** a heuristic evaluation on Android, then 4 rounds of feedback with the CEO.
+- **Result:** a clearer checkout, plus FLIK's first desktop version. Not measured.
 
----
+This was my first project at FLIK, and the company was a year old, so there was no data to start from. I reviewed the live checkout against standard usability heuristics and found **14 issues**. Most were about clarity: a logo too small to read, repeated information, a cluttered coupon section, and a "Pay now" button that failed silently when no courier was chosen.
 
-## Research Methodology
+![The original checkout annotated with 14 usability issues](./phase1-heuristic-evaluation.png)
 
-### Phase 1: Heuristic Evaluation
-Observation-based analysis using Google Chrome on Android devices to manually identify usability issues.
+I took low-fidelity fixes through four rounds with the CEO, then moved to high fidelity. With no PM yet, I also briefed engineering and ran the handoff. The CEO then asked for a desktop version, which FLIK hadn't had.
 
-- **Approach:** Device-based testing
-- **Feedback loops:** 4 rounds of iteration with CEO
-- **Outcome:** Identified key friction points for redesign
+![Checkout before and after the phase 1 redesign](./phase1-before-after.png)
 
-![Phase 1: Before and after checkout UI comparison](./phase1-before-after-comparison.svg)
-
-### Phase 2: Unmoderated Usability Testing
-Large-scale remote testing to validate guest checkout preference and button placement.
-
-- **Tool:** Maze
-- **Sample:** 100 users (50 guest checkout, 50 logged-in)
-- **Recruitment:** Email blast and push notifications
-- **Device:** Android mockup
-- **Research questions:** Guest checkout preference, button placement optimization
-
-**Key Finding:** 68% of participants chose Guest Checkout, perceiving it as faster despite contradictory performance data.
-
-![Phase 2: CVR gap analysis - 5.15% difference between guest checkout and login](./phase2-cvr-gap-analysis.svg)
-
-![Phase 2: Maze usability testing research](./phase2-maze-research.avif)
-
-### Phase 3: Guerrilla Usability Testing
-In-person testing to validate drop-off hypothesis and test simplified flow.
-
-- **Sample:** 10 on-site recruits (non-targeted sampling)
-- **Prototyping:** Figma
-- **Devices:** Android and laptops
-- **Methodology:** In-person testing with context-setting ice-breakers
-
-**Key Finding:** Significant drop-off at login/guest checkout decision point due to session reset (48-hour timeout).
-
-![Phase 3: User flow showing drop-off at login/guest checkout decision point](./phase3-userflow-dropoff.svg)
-
-### Phase 4: Iterative Refinement Testing
-Three additional usability testing rounds to fine-tune UI balance between guest checkout accessibility and login incentivization.
+> **Takeaway:** without a baseline, I couldn't show whether this worked. From then on, each phase started from data or research.
 
 ---
 
-## Key Insights
+## Phase 2 · Shoppers wanted rewards, but chose speed
 
-### Perception vs. Reality Gap
-Users perceived guest checkout as faster, but actual performance data showed the opposite. This perception-reality mismatch drove checkout abandonment.
+- **Trigger:** three months after guest checkout launched, it converted **5.15% better** than login.
+- **Method:** an unmoderated study in Maze with about 20 recent guest and logged-in buyers.
+- **Result:** a new understanding of the problem, and a recommendation to make the reward visible.
 
-### Silent Business Value Loss
-Users didn't realize that logging in with FLIK offered extra cashback and faster checkout. The reward benefits were unclear on the login page, reducing login incentive.
+FLIK added guest checkout to reduce friction: pay with just a name, email and phone number. Another designer led it. I'd argued it would undercut login, then committed to making it work. Three months later the data showed the risk: on the page where shoppers choose, guest checkout was winning.
 
-### Session Reset Friction
-The 48-hour session timeout was causing logged-in users to re-authenticate mid-flow, creating unexpected friction for the intended "faster" path.
+![The login page and the 5.15% gap](./phase2-cvr-gap-analysis.svg)
 
-### Flow Simplification Opportunity
-The explicit login/guest checkout decision point was a major drop-off trigger. Removing this step could simplify the flow for both user types.
+The obvious move was to rearrange the buttons. I wanted to know **why** people chose guest first. The study asked what shoppers cared about before showing any screen, then had them check out and explain their choice.
 
----
+| Result | |
+|---|---|
+| **100%** | said they'd rather save with rewards |
+| **68%** | still chose guest checkout |
+| **9.1/10** | rated checkout easy |
 
-## Design Process
+![The Maze study](./phase2-maze-research.avif)
 
-### Phase 1: Initial Redesign
-- Low-fidelity iterations incorporating stakeholder feedback
-- High-fidelity development post-approval
-- Desktop version creation to match mobile design consistency
+**The insight:** shoppers wanted what logging in gives them, but chose guest because it *felt* faster, even though logged-in checkout is the faster one. The benefit of logging in was invisible.
 
-**Outcome:** Checkout conversion rates increased; CEO approved for desktop development.
-
-### Phase 2: Guest Checkout Feature Addition
-- Feature implementation based on Phase 1 learnings
-- Data-driven iteration following 3-month post-launch observation
-- Reward messaging refinement
-
-**Outcome:** Average checkout ease rating: 9.1/10; guest checkout selection: 68%.
-
-### Phase 3: Flow Simplification
-**Short-term:** Extended session persistence from 48 hours to 1 month, reasoning that FLIK's low market prominence made account compromise unlikely.
-
-**Long-term strategy:** Remove the intermediate login/guest checkout decision step, allowing direct checkout access for logged-in users.
-
-![Phase 3: Long-term solution - simplified checkout flow](./phase3-longterm-solution.svg)
-
-**Outcome:** Quantified drop-off issue; validated simplified approach through testing.
-
-### Phase 4: Fine-Tuning
-- Three additional usability testing rounds
-- UI refinement to balance guest checkout accessibility with login incentivization
-- Iterative adjustments based on click-rate data
-
-**Outcome:** Successfully balanced click rates between guest checkout and login options.
+**Decision:** keep the layout, because guest checkout supported the business priority at the time (transaction volume), and make the benefit of logging in obvious. Engineering had other priorities, so it waited, but this insight shaped every phase after.
 
 ---
 
-## Design Decisions
+## Phase 3 · Fix the leak now, redesign the step next
 
-### 1. Maintain Button Position (Phase 2)
-**Decision:** Keep current button placement while improving reward messaging clarity.
+- **Trigger:** the PM spotted a significant drop-off on the log-in-or-guest page.
+- **Method:** root cause with engineering, then guerrilla testing of a one-step flow (10 people, Figma prototype, phones and laptops).
+- **Result:** logins extended from 48 hours to 1 month (shipped). The one-step flow was validated, with a new risk.
 
-**Rationale:** Testing showed position was not the primary friction; lack of clarity around benefits was the issue.
+![The drop-off at the log-in-or-guest step](./phase3-userflow-dropoff.svg)
 
-### 2. Extended Session Persistence (Phase 3, Short-term)
-**Decision:** Extend session timeout from 48 hours to 1 month.
+**The quick fix.** Logged-in shoppers should skip that page entirely, but logins expired every 48 hours, sending returning shoppers back to it. The 48 hours existed for security on shared devices and to keep stored carts small. Engineering said cart size was manageable. As for security, being logged in never moves money on its own: QRIS and virtual-account payments are approved in the shopper's own bank or e-wallet app, and cards go through 3-D Secure. So we extended logins to **one month**, and it shipped.
 
-**Rationale:** Addresses immediate drop-off by reducing re-authentication friction. Security risk mitigated by FLIK's limited market prominence and fraud monitoring.
+**The bigger fix.** After a competitor review and a brainstorm with the PM, we proposed removing the page altogether: click checkout, land on checkout.
 
-### 3. Remove Intermediate Step (Phase 3, Long-term)
-**Decision:** Eliminate the explicit login/guest checkout decision page.
+![From a fork to a straight line](./phase3-longterm-solution.svg)
 
-**Rationale:** Direct access to checkout for logged-in users reduces decision fatigue and drop-off at this critical juncture.
+It was a big change, so we tested it quickly with 10 people recruited near our office.
 
-### 4. Iterative UI Refinement (Phase 4)
-**Decision:** Balance guest checkout accessibility with login encouragement through careful UI design.
-
-**Rationale:** Avoid guest checkout becoming overly dominant, which would reduce login rates and long-term retention.
+- **What worked:** it felt more straightforward, with fewer decisions and less commitment before seeing the order.
+- **What didn't:** people still didn't know logging in earns cashback, and guest checkout became even more dominant.
 
 ---
 
-## Outcomes & Metrics
+## Phase 4 · Make the reward visible
 
-| Phase | Metric | Result |
-|-------|--------|--------|
-| **1** | Conversion increase | ✓ Improved post-redesign |
-| **2** | Checkout ease (1–10) | 9.1/10 |
-| **2** | Guest checkout selection | 68% |
-| **2** | Login/register selection | 32% |
-| **3** | Drop-off identification | Quantified at decision point |
-| **4** | Click-rate balance | Successfully achieved |
+- **Trigger:** the one-step flow made guest checkout too dominant.
+- **Method:** three more rounds of iteration and usability testing.
+- **Result:** clicks between guest and login evened out in testing. A one-step checkout that shows the reward shipped.
 
----
+The answer came from phase 2: shoppers log in when they can see what they'll get. So I tested a checkout that opens with the shopper's **actual potential cashback** and a single "Continue with FLIK" button, while guest checkout stays one tap away.
 
-## Tools & Technologies
+The CEO preferred a different look for the final screen, so I rebuilt it around the same tested principles: one step for everyone, with the shopper's **potential reward** shown in the cart and right under the pay button. That version is live today.
 
-- **Browser Testing:** Google Chrome
-- **Usability Testing:** Maze
-- **Prototyping:** Figma
-- **Recruitment:** Email, push notifications
+![From left: the original, phase 1, the tested cashback-first version, and the live checkout](./phase4-evolution.png)
 
 ---
 
-## Key Learnings
+## Impact, honestly
 
-1. **Perception drives behavior** — Users' mental models of flow speed matter as much as actual performance. Test and communicate.
+- **Shipped:** a redesigned checkout and FLIK's first desktop version, logins that last a month instead of 48 hours, and a one-step entry that shows the shopper's potential reward where they pay.
+- **Changed how the team saw the problem:** the gap between guest and login was about perceived value, not button placement.
+- **Not measured yet:** FLIK doesn't currently track the checkout funnel, so I can't claim a conversion number. The first thing I'd measure is the share of logged-in checkouts before and after launch, then A/B test how the reward is shown.
 
-2. **Session design has outsized impact** — A 48-hour timeout is invisible until it causes friction. Consider user lifetime in session design.
+## What I'd do differently
 
-3. **Simplification beats feature completeness** — Removing the login/guest decision step was more powerful than optimizing either option.
-
-4. **Balance trumps extreme optimization** — Over-optimizing for one path (guest checkout) can harm long-term business goals (login + retention).
-
-5. **Iteration compounds insights** — Each phase revealed hidden assumptions and validated new approaches. No single round of testing was conclusive.
-
----
-
-## Impact
-
-**Conversion Rate:** Measurable improvement in checkout completion rates through friction reduction.
-
-**User Satisfaction:** 9.1/10 checkout ease rating demonstrates strong product-market fit for redesigned flow.
-
-**Business Alignment:** Successfully balanced UX simplicity with business objectives of login incentivization and customer retention.
+- **Agree on a success metric before designing.** Phase 1 shipped with nothing to measure it against; I now put a metric in every brief.
+- **Ask for an experiment before big launches.** I disagreed with how guest checkout launched; a test with a clear success metric would have settled it with data.
+- **Pair small tests with funnel data.** Ten guerrilla participants give direction, not proof.
 
 ---
 
-![Phase 4: Full UI transformation of FLIK checkout](./phase4-ui-transformation.svg)
-
----
-
-## Reflection
-
-This project exemplifies iterative, research-driven design under real-world constraints. The challenge wasn't identifying what to fix—it was **reconciling user needs (simplicity) with business needs (login/retention)**. The solution required multiple research methodologies (heuristic, unmoderated, guerrilla) to build confidence in decisions that had trade-offs.
-
-The willingness to extend session timeouts and simplify the flow—despite security and short-term analytics implications—demonstrates the importance of aligning design decisions with long-term product strategy and user behavior.
+*Contact details in the screenshots are blurred.* · [Raam Pujangga Sadewa](https://raam-portfolio-eta.vercel.app) · Product Design Engineer
